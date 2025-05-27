@@ -1,10 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api"
+      "source": "/src/(.*)",
+      "destination": "/src"
     }
-  ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "public"
+  ]
 }
