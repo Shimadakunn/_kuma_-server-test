@@ -2,8 +2,6 @@
   "name": "my-app",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "prisma generate && npx prisma migrate deploy && tsc",
     "start": "vercel dev",
     "deploy": "vercel"
   },
