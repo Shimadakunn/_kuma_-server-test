@@ -1,10 +1,10 @@
 import { Hono } from "hono";
 import { bearerAuth } from "hono/bearer-auth";
-import userRoutes from "./user";
-import positionsRoutes from "./positions";
-import actionsRoutes from "./actions";
-import notificationsRoutes from "./notifications";
-import rewardsRoutes from "./rewards";
+import userRoutes from "./users.js";
+import positionsRoutes from "./positions/index.js";
+import actionsRoutes from "./actions.js";
+import notificationsRoutes from "./notifications.js";
+import rewardsRoutes from "./rewards.js";
 
 const user = new Hono();
 

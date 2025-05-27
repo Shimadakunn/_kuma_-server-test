@@ -6,9 +6,9 @@ import {
   getUser,
   validateTimeframe,
   type Timeframe,
-} from "@/utils";
-import { setUserPosition } from "./set";
-import { getUserPositions } from "./get";
+} from "@utils/index.js";
+import { setUserPosition } from "./set.js";
+import { getUserPositions } from "./get.js";
 
 const prisma = new PrismaClient().$extends(withAccelerate());
 

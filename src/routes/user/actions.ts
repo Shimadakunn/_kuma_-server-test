@@ -1,8 +1,12 @@
-import { validateWallet, validateAction, validateAmount } from "@/utils";
+import {
+  getUser,
+  validateWallet,
+  validateAction,
+  validateAmount,
+} from "@utils/index.js";
 import { Hono } from "hono";
 import { PrismaClient, Action } from "@prisma/client";
 import { withAccelerate } from "@prisma/extension-accelerate";
-import { getUser } from "@/utils";
 
 const prisma = new PrismaClient().$extends(withAccelerate());
 

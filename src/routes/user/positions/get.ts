@@ -1,5 +1,9 @@
-import type { Timeframe } from "@/utils";
-import { emptyUserPosition, getPositionsCount, getStartDate } from "@/utils";
+import {
+  emptyUserPosition,
+  getPositionsCount,
+  getStartDate,
+  type Timeframe,
+} from "@utils/index.js";
 import { PrismaClient, type User, type UserPosition } from "@prisma/client";
 import { withAccelerate } from "@prisma/extension-accelerate";
 

@@ -1,4 +1,4 @@
-import type { Timeframe } from "./types";
+import type { Timeframe } from "./types.js";
 
 export const formatValue = (value: bigint) =>
   (Number(value) / 10 ** 6).toFixed(6);

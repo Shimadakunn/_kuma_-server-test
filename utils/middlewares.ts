@@ -1,5 +1,5 @@
 import { Action } from "@prisma/client";
-import type { Timeframe } from "./types";
+import type { Timeframe } from "./types.js";
 
 const VALID_TIMEFRAMES: Timeframe[] = ["1H", "1D", "1W", "1M", "1Y", "MAX"];
 

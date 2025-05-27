@@ -7,7 +7,7 @@ import {
   FACTORY_ADDRESS,
   client,
   emptyUserPosition,
-} from "@/utils";
+} from "@utils/index.js";
 
 const prisma = new PrismaClient().$extends(withAccelerate());
 

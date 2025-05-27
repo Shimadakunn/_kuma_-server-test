@@ -1,8 +1,8 @@
 import { Hono } from "hono";
 import { serve } from "@hono/node-server";
-import user from "./routes/user";
-import waitingList from "./routes/waiting-list";
-import moonpay from "./routes/moonpay";
+import user from "@/routes/user/index.js";
+import waitingList from "@/routes/waiting-list/index.js";
+import moonpay from "@/routes/moonpay/index.js";
 
 const app = new Hono();
 

@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-import sign from "./sign";
-import events from "./events";
+import sign from "./sign.js";
+import events from "./events.js";
 
 const moonpay = new Hono();
 
