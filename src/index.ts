@@ -4,6 +4,12 @@ import user from "./routes/user/index.js";
 import waitingList from "./routes/waiting-list/index.js";
 import moonpay from "./routes/moonpay/index.js";
 
+import { handle } from "hono/vercel";
+
+export const config = {
+  runtime: "edge",
+};
+
 const app = new Hono();
 
 app.get("/", (c) => {
@@ -17,8 +23,4 @@ app.route("/user", user);
 app.route("/moonpay", moonpay);
 app.route("/waiting-list", waitingList);
 
-const port = process.env.PORT || 3000;
-serve({
-  fetch: app.fetch,
-  port: Number(port),
-});
+export default handle(app);
