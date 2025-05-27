@@ -6,6 +6,13 @@ import moonpay from "./routes/moonpay";
 
 const app = new Hono();
 
+app.get("/", (c) => {
+  return c.json({
+    status: "ok",
+    timestamp: new Date().toISOString(),
+  });
+});
+
 app.route("/user", user);
 app.route("/moonpay", moonpay);
 app.route("/waiting-list", waitingList);
