@@ -17,6 +17,7 @@ router.get("/set", async (c) => {
   const yesterday = new Date(now.getTime() - 24 * 60 * 60 * 1000);
 
   // -- GET REWARDS FOR EACH USER
+  // @ts-ignore
   await prisma.$transaction(async (tx) => {
     for (const user of users) {
       // -- GET CURRENT POSITION
