@@ -1,17 +1,15 @@
 {
-  "buildCommand": "bun run build",
-  "outputDirectory": "dist",
-  "devCommand": "bun run dev",
-  "framework": null,
-  "functions": {
-    "dist/index.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/dist/index.js"
+      "src": "src/index.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/index.ts"
     }
   ]
 }
