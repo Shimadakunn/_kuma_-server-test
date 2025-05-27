@@ -46,7 +46,9 @@ export async function getUserPositions(user: User, timeframe: Timeframe) {
         }
       );
 
-      positions = [...positions, ...emptyPositions].sort(
+      positions = [...positions, ...emptyPositions] as UserPosition[];
+
+      positions.sort(
         (a, b) =>
           new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
       );
@@ -98,7 +100,7 @@ export async function getUserPositions(user: User, timeframe: Timeframe) {
       }
     );
 
-    positions = [...positions, ...emptyPositions];
+    positions = [...positions, ...emptyPositions] as UserPosition[];
   }
 
   // -- SORT BY TIMESTAMP DESCENDING
