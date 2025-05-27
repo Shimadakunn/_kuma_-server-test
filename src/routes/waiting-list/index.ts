@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { validateEmail } from "@utils/index.js";
+import { validateEmail } from "../../../utils/index.js";
 import { PrismaClient } from "@prisma/client";
 import { withAccelerate } from "@prisma/extension-accelerate";
 

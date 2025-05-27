@@ -33,3 +33,4 @@ dist/
 pnpm-lock.yaml
 
 prisma/migrations/
+.vercel

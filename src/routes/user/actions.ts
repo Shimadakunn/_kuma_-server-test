@@ -3,7 +3,7 @@ import {
   validateWallet,
   validateAction,
   validateAmount,
-} from "@utils/index.js";
+} from "../../../utils/index.js";
 import { Hono } from "hono";
 import { PrismaClient, Action } from "@prisma/client";
 import { withAccelerate } from "@prisma/extension-accelerate";

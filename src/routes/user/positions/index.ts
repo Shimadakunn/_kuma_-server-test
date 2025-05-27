@@ -6,7 +6,7 @@ import {
   getUser,
   validateTimeframe,
   type Timeframe,
-} from "@utils/index.js";
+} from "../../../../utils/index.js";
 import { setUserPosition } from "./set.js";
 import { getUserPositions } from "./get.js";
 

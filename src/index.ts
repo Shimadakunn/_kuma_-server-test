@@ -1,14 +1,14 @@
 import { Hono } from "hono";
 import { serve } from "@hono/node-server";
-import user from "@/routes/user/index.js";
-import waitingList from "@/routes/waiting-list/index.js";
-import moonpay from "@/routes/moonpay/index.js";
+import user from "./routes/user/index.js";
+import waitingList from "./routes/waiting-list/index.js";
+import moonpay from "./routes/moonpay/index.js";
 
 const app = new Hono();
 
 app.get("/", (c) => {
   return c.json({
-    status: "ok",
+    status: "okkkk",
     timestamp: new Date().toISOString(),
   });
 });

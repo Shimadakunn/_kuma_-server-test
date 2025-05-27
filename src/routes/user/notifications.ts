@@ -1,7 +1,11 @@
 import { Hono } from "hono";
 import { PrismaClient } from "@prisma/client";
 import { withAccelerate } from "@prisma/extension-accelerate";
-import { getUser, validateNotification, validateWallet } from "@utils/index.js";
+import {
+  getUser,
+  validateNotification,
+  validateWallet,
+} from "../../../utils/index.js";
 
 const prisma = new PrismaClient().$extends(withAccelerate());
 

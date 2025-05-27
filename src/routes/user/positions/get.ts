@@ -3,7 +3,7 @@ import {
   getPositionsCount,
   getStartDate,
   type Timeframe,
-} from "@utils/index.js";
+} from "../../../../utils/index.js";
 import { PrismaClient, type User, type UserPosition } from "@prisma/client";
 import { withAccelerate } from "@prisma/extension-accelerate";
 
